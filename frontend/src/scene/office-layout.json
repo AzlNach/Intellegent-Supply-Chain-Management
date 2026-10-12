@@ -1,0 +1,149 @@
+{
+  "gridSize": {
+    "width": 10,
+    "height": 10
+  },
+  "tileSize": {
+    "width": 32,
+    "height": 16
+  },
+  "walls": {
+    "height": 72,
+    "color": "#2b2d5c",
+    "trimColor": "#3f427b",
+    "skirtingColor": "#151630",
+    "windows": [
+      { "id": "win_1", "wall": "left_wall", "gy": 3, "width": 36, "height": 48 },
+      { "id": "win_2", "wall": "left_wall", "gy": 7, "width": 36, "height": 48 }
+    ]
+  },
+  "anchors": {
+    "ie_desk_seat": { "gx": 3, "gy": 4, "facing": "north_east" },
+    "board_front": { "gx": 6, "gy": 2, "facing": "north_east" },
+    "solver_front": { "gx": 1, "gy": 8, "facing": "north_west" },
+    "head_desk": { "gx": 7, "gy": 4, "facing": "south_west" },
+    "hallway": { "gx": 5, "gy": 5, "facing": "south_east" }
+  },
+  "objects": [
+    {
+      "id": "bookcase_1",
+      "sprite": "bookcase_left",
+      "gx": 0,
+      "gy": 1,
+      "width": 1,
+      "height": 1,
+      "interactive": false,
+      "label": "Rak Buku Dokumentasi"
+    },
+    {
+      "id": "bookcase_2",
+      "sprite": "bookcase_right",
+      "gx": 1,
+      "gy": 0,
+      "width": 1,
+      "height": 1,
+      "interactive": false,
+      "label": "Rak Buku Riset Operasi"
+    },
+    {
+      "id": "whiteboard_main",
+      "sprite": "whiteboard",
+      "gx": 4,
+      "gy": 0,
+      "width": 3,
+      "height": 1,
+      "wallMounted": true,
+      "wall": "right_wall",
+      "interactive": true,
+      "elevation": 18,
+      "label": "Papan Tulis Divisi SCDS-OR"
+    },
+    {
+      "id": "bookcase_3",
+      "sprite": "bookcase_right",
+      "gx": 8,
+      "gy": 0,
+      "width": 1,
+      "height": 1,
+      "interactive": false,
+      "label": "Rak Buku Arsip Kebijakan"
+    },
+    {
+      "id": "plant_1",
+      "sprite": "plant",
+      "gx": 0,
+      "gy": 0,
+      "width": 1,
+      "height": 1,
+      "interactive": false,
+      "label": "Tanaman Hias Sudut"
+    },
+    {
+      "id": "plant_2",
+      "sprite": "plant",
+      "gx": 9,
+      "gy": 1,
+      "width": 1,
+      "height": 1,
+      "interactive": false,
+      "label": "Tanaman Hias Jendela"
+    },
+    {
+      "id": "solver_station",
+      "sprite": "solver_rack",
+      "gx": 0,
+      "gy": 8,
+      "width": 1,
+      "height": 1,
+      "interactive": true,
+      "label": "Stasiun Solver Engine"
+    },
+    {
+      "id": "ie_desk",
+      "sprite": "desk_workstation",
+      "gx": 3,
+      "gy": 3,
+      "width": 2,
+      "height": 2,
+      "interactive": true,
+      "label": "Meja Kerja IE Agent"
+    },
+    {
+      "id": "head_desk",
+      "sprite": "head_desk",
+      "gx": 7,
+      "gy": 3,
+      "width": 2,
+      "height": 2,
+      "interactive": true,
+      "label": "Meja Head SCDS-OR (Kosong)"
+    },
+    {
+      "id": "future_desk_1",
+      "sprite": "desk_workstation",
+      "gx": 3,
+      "gy": 7,
+      "width": 2,
+      "height": 2,
+      "interactive": false,
+      "isFuture": true,
+      "label": "Meja Agent Tambahan 1"
+    },
+    {
+      "id": "future_desk_2",
+      "sprite": "desk_workstation",
+      "gx": 7,
+      "gy": 7,
+      "width": 2,
+      "height": 2,
+      "interactive": false,
+      "isFuture": true,
+      "label": "Meja Agent Tambahan 2"
+    }
+  ],
+  "settings": {
+    "showFutureDesks": false,
+    "enableLightShafts": true,
+    "enableDustParticles": true
+  }
+}

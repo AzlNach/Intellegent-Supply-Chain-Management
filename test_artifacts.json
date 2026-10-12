@@ -1,0 +1,1484 @@
+{
+  "run_id": "virtual-office-v1-20261010",
+  "created_at_utc": "2026-10-10T00:00:00Z",
+  "note": "Live test product/task/update IDs are appended here before follow-up mutations. No secrets are stored.",
+  "ids": [
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T124315Z-13f5ea69",
+      "created_at_utc": "2026-10-10T12:43:15.696424+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "g7YdKUdX594TsH3OYoMN",
+      "created_at_utc": "2026-10-10T12:43:16.079832+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "iDp6Ac6TcesA8z8pupcp",
+      "created_at_utc": "2026-10-10T12:43:17.017683+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "IRETf9ggEPLL96XMZ2wb",
+      "created_at_utc": "2026-10-10T12:43:17.582928+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T124340Z-f3f33d11",
+      "created_at_utc": "2026-10-10T12:43:40.199888+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "FAAb8MoB6bas4kTTXJYK",
+      "created_at_utc": "2026-10-10T12:43:40.495164+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "SFCZptL5S4WD1jDWPpAH",
+      "created_at_utc": "2026-10-10T12:43:41.161252+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "CZ3qrHMFB0wKKtekI7EW",
+      "created_at_utc": "2026-10-10T12:43:41.620031+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T124342Z-87be7644",
+      "created_at_utc": "2026-10-10T12:43:42.308387+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-b4f626d02040",
+      "created_at_utc": "2026-10-10T12:43:42.503424+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T124342Z-7246855c",
+      "created_at_utc": "2026-10-10T12:43:42.870878+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-f5fe6c59a314",
+      "created_at_utc": "2026-10-10T12:43:43.056964+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T124343Z-51519597",
+      "created_at_utc": "2026-10-10T12:43:43.224833+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-08c58be26cce",
+      "created_at_utc": "2026-10-10T12:43:43.428190+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T124343Z-b237ed6e",
+      "created_at_utc": "2026-10-10T12:43:43.536654+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T124959Z-cd5dcd08",
+      "created_at_utc": "2026-10-10T12:49:59.855653+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "96TKrgOAdCR4BC2GhKFi",
+      "created_at_utc": "2026-10-10T12:50:00.218875+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "2p1QmoKYUYMr9twaJRnw",
+      "created_at_utc": "2026-10-10T12:50:01.190672+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "SSALMxlWfivXhHRwUWT6",
+      "created_at_utc": "2026-10-10T12:50:01.813284+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125002Z-377fc45f",
+      "created_at_utc": "2026-10-10T12:50:02.639017+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-895b37ec44f6",
+      "created_at_utc": "2026-10-10T12:50:02.863164+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125003Z-9ba6b404",
+      "created_at_utc": "2026-10-10T12:50:03.285282+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-15aaa1e2c9c8",
+      "created_at_utc": "2026-10-10T12:50:03.489148+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125003Z-593c2b25",
+      "created_at_utc": "2026-10-10T12:50:03.672953+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-d5093116d7f0",
+      "created_at_utc": "2026-10-10T12:50:03.896287+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125004Z-76303687",
+      "created_at_utc": "2026-10-10T12:50:04.013052+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125610Z-b8b3f805",
+      "created_at_utc": "2026-10-10T12:56:10.913857+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "xS4juMccQdRrIjVFmz8V",
+      "created_at_utc": "2026-10-10T12:56:11.427751+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "vKkXKiT7oIba1jz6fmsi",
+      "created_at_utc": "2026-10-10T12:56:12.387046+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "wBCxLIPCd5LhV7a5khXR",
+      "created_at_utc": "2026-10-10T12:56:13.069998+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "C0V8LxHCPTQdLQzJoPe5",
+      "created_at_utc": "2026-10-10T12:56:14.169280+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125614Z-27523c28",
+      "created_at_utc": "2026-10-10T12:56:14.591926+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-fd0163059966",
+      "created_at_utc": "2026-10-10T12:56:14.854548+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125615Z-56561139",
+      "created_at_utc": "2026-10-10T12:56:15.325802+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-becc862033e0",
+      "created_at_utc": "2026-10-10T12:56:15.592636+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125615Z-fb17fe94",
+      "created_at_utc": "2026-10-10T12:56:15.833818+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-b096dd23d830",
+      "created_at_utc": "2026-10-10T12:56:16.130588+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T125616Z-b32d1c89",
+      "created_at_utc": "2026-10-10T12:56:16.277980+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T130126Z-e01d2fec",
+      "created_at_utc": "2026-10-10T13:01:26.974933+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T130733Z-ba4d6168",
+      "created_at_utc": "2026-10-10T13:07:33.434544+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "aOrJuQNorXXpbwUL1wXg",
+      "created_at_utc": "2026-10-10T13:07:33.873829+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "uLyeiIAoWBLbQ8X76wVC",
+      "created_at_utc": "2026-10-10T13:07:34.786922+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "roMrtvpE8UaDvSobfKbx",
+      "created_at_utc": "2026-10-10T13:07:35.297641+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "VLnLdS8pjD86jFOjub4z",
+      "created_at_utc": "2026-10-10T13:07:36.360693+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T130736Z-c85ee375",
+      "created_at_utc": "2026-10-10T13:07:36.709978+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-d726ed1d992d",
+      "created_at_utc": "2026-10-10T13:07:36.930638+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T130737Z-9074b02d",
+      "created_at_utc": "2026-10-10T13:07:37.338620+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-3c905e0d1083",
+      "created_at_utc": "2026-10-10T13:07:37.541323+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T130737Z-64ca3f59",
+      "created_at_utc": "2026-10-10T13:07:37.727660+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-4f5cb763ba19",
+      "created_at_utc": "2026-10-10T13:07:38.262440+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T130738Z-80249927",
+      "created_at_utc": "2026-10-10T13:07:38.380232+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T145644Z-10f3d571",
+      "created_at_utc": "2026-10-10T14:56:44.659763+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "wuuys8KAVvAQPcrgfgeU",
+      "created_at_utc": "2026-10-10T14:56:45.011396+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "GBcHFqAuFEXOtyCKULF4",
+      "created_at_utc": "2026-10-10T14:56:45.925191+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "kZWoSwvrmWpOyb7I9d62",
+      "created_at_utc": "2026-10-10T14:56:46.454787+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "vFQHHBWemeosRjJbLH2Y",
+      "created_at_utc": "2026-10-10T14:56:47.401549+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T145647Z-a3343538",
+      "created_at_utc": "2026-10-10T14:56:47.725403+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-78333c95faf6",
+      "created_at_utc": "2026-10-10T14:56:47.948603+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T145648Z-d56e288d",
+      "created_at_utc": "2026-10-10T14:56:48.339647+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-9c92efb52e3a",
+      "created_at_utc": "2026-10-10T14:56:48.534579+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T145648Z-33a0286d",
+      "created_at_utc": "2026-10-10T14:56:48.699706+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-0cd2800ff135",
+      "created_at_utc": "2026-10-10T14:56:48.885839+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T145648Z-a731f31a",
+      "created_at_utc": "2026-10-10T14:56:48.994881+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T145832Z-a2d9fc25",
+      "created_at_utc": "2026-10-10T14:58:32.582531+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T153959Z-3eb8a014",
+      "created_at_utc": "2026-10-10T15:39:59.426335+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "ZQfw6DS0YPcFWEl7F1vT",
+      "created_at_utc": "2026-10-10T15:39:59.823972+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "1j21hcQIYezVAMyTNSfQ",
+      "created_at_utc": "2026-10-10T15:40:00.729288+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "YiQl549YIWisNi8kvY7B",
+      "created_at_utc": "2026-10-10T15:40:01.292161+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "yYF5NV2DZRMqXYdO0sAa",
+      "created_at_utc": "2026-10-10T15:40:02.342648+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T154002Z-62df0437",
+      "created_at_utc": "2026-10-10T15:40:02.694836+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-99c2375596bb",
+      "created_at_utc": "2026-10-10T15:40:02.908970+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T154003Z-b07e08a5",
+      "created_at_utc": "2026-10-10T15:40:03.519185+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-130c16446280",
+      "created_at_utc": "2026-10-10T15:40:03.763335+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T154003Z-39d0825c",
+      "created_at_utc": "2026-10-10T15:40:03.960447+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-019c56146a42",
+      "created_at_utc": "2026-10-10T15:40:04.201151+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T154004Z-7325292d",
+      "created_at_utc": "2026-10-10T15:40:04.319094+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T155140Z-25974d26",
+      "created_at_utc": "2026-10-10T15:51:40.203703+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "WDz02ZkbjB532X1Iahcz",
+      "created_at_utc": "2026-10-10T15:51:40.635898+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "7rBenZpr7dgwmkRjwPTp",
+      "created_at_utc": "2026-10-10T15:51:41.696672+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "T7lx7gNMnafkCw1owdXu",
+      "created_at_utc": "2026-10-10T15:51:42.283260+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "9PAbVf3FpIppWZYd1XwI",
+      "created_at_utc": "2026-10-10T15:51:43.471054+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T155143Z-b678f0f3",
+      "created_at_utc": "2026-10-10T15:51:43.796904+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-36b780394cc7",
+      "created_at_utc": "2026-10-10T15:51:44.033489+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T155144Z-f3512b27",
+      "created_at_utc": "2026-10-10T15:51:44.512263+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-7e4bce769182",
+      "created_at_utc": "2026-10-10T15:51:44.738844+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T155144Z-ab1d1ada",
+      "created_at_utc": "2026-10-10T15:51:44.952604+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-43d12515d2f0",
+      "created_at_utc": "2026-10-10T15:51:45.204186+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T155145Z-70356a24",
+      "created_at_utc": "2026-10-10T15:51:45.313770+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T160032Z-307fdee3",
+      "created_at_utc": "2026-10-10T16:00:32.435097+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "m1WpVptThITwXucqvpNJ",
+      "created_at_utc": "2026-10-10T16:00:32.868528+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "dvJ9hRywVMefZtAFlUC5",
+      "created_at_utc": "2026-10-10T16:00:33.825924+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "sYAzlFNgy1JXGSdjKSUz",
+      "created_at_utc": "2026-10-10T16:00:34.357853+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "XY1Ua2MPBOyeJzFRKeNQ",
+      "created_at_utc": "2026-10-10T16:00:35.564585+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T160035Z-8e340956",
+      "created_at_utc": "2026-10-10T16:00:35.882631+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-9adc6e63ca5e",
+      "created_at_utc": "2026-10-10T16:00:36.122595+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T160036Z-e005310b",
+      "created_at_utc": "2026-10-10T16:00:36.579017+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-558be46ef875",
+      "created_at_utc": "2026-10-10T16:00:36.791483+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T160036Z-e4a2ec14",
+      "created_at_utc": "2026-10-10T16:00:36.976728+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-bebab19b56c3",
+      "created_at_utc": "2026-10-10T16:00:37.185803+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T160037Z-63addad8",
+      "created_at_utc": "2026-10-10T16:00:37.309608+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T160447Z-0775c5f4",
+      "created_at_utc": "2026-10-10T16:04:47.279729+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T161822Z-1169e6de",
+      "created_at_utc": "2026-10-10T16:18:22.180089+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "s8trQaA6jrPWgVlmNDjj",
+      "created_at_utc": "2026-10-10T16:18:22.613881+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "hxM9vzxvsES79ZkOrnaS",
+      "created_at_utc": "2026-10-10T16:18:23.627437+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "gkHyJimDmJvnAXVWtRFN",
+      "created_at_utc": "2026-10-10T16:18:24.191138+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "RZ2kqRn2w4oL3w3815cr",
+      "created_at_utc": "2026-10-10T16:18:25.563436+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T161825Z-da8f3437",
+      "created_at_utc": "2026-10-10T16:18:25.927362+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-6c0445d1401c",
+      "created_at_utc": "2026-10-10T16:18:26.196625+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T161826Z-655553e6",
+      "created_at_utc": "2026-10-10T16:18:26.752571+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-693c9a18556a",
+      "created_at_utc": "2026-10-10T16:18:27.015617+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T161827Z-2d1f2f89",
+      "created_at_utc": "2026-10-10T16:18:27.299513+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-65cec9b99d22",
+      "created_at_utc": "2026-10-10T16:18:27.550245+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T161827Z-f66c2b27",
+      "created_at_utc": "2026-10-10T16:18:27.671703+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T162209Z-9aa30b22",
+      "created_at_utc": "2026-10-10T16:22:09.225163+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T184016Z-8f65cfb4",
+      "created_at_utc": "2026-10-10T18:40:16.576211+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "S3W9vagH9S1aBWlppxwp",
+      "created_at_utc": "2026-10-10T18:40:16.981782+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "drs8P0vPPGX3ZA5jtyS1",
+      "created_at_utc": "2026-10-10T18:40:17.934538+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "qZun4mcmJX5JTpz4kFX5",
+      "created_at_utc": "2026-10-10T18:40:18.513946+00:00"
+    },
+    {
+      "kind": "task_id",
+      "id": "rjnkZvYzHAAe2jzov54Q",
+      "created_at_utc": "2026-10-10T18:40:19.659196+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T184019Z-1610e0a6",
+      "created_at_utc": "2026-10-10T18:40:19.978427+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-c279710a52e2",
+      "created_at_utc": "2026-10-10T18:40:20.199337+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T184020Z-826689d2",
+      "created_at_utc": "2026-10-10T18:40:20.608297+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-ffdeeae562f6",
+      "created_at_utc": "2026-10-10T18:40:20.818889+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T184021Z-0f22d1a9",
+      "created_at_utc": "2026-10-10T18:40:21.005900+00:00"
+    },
+    {
+      "kind": "update_id",
+      "id": "REQ-056266bc4d4f",
+      "created_at_utc": "2026-10-10T18:40:21.221245+00:00"
+    },
+    {
+      "kind": "product_id",
+      "id": "TEST-VO-20261010T184021Z-4a905637",
+      "created_at_utc": "2026-10-10T18:40:21.334802+00:00"
+    }
+  ],
+  "runs": [
+    {
+      "observed_at_utc": "2026-10-10T12:43:43.665713+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        }
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T124340Z-f3f33d11",
+        "TEST-VO-20261010T124342Z-87be7644",
+        "TEST-VO-20261010T124342Z-7246855c",
+        "TEST-VO-20261010T124343Z-51519597",
+        "TEST-VO-20261010T124343Z-b237ed6e"
+      ],
+      "created_task_ids": [
+        "FAAb8MoB6bas4kTTXJYK",
+        "SFCZptL5S4WD1jDWPpAH",
+        "CZ3qrHMFB0wKKtekI7EW"
+      ],
+      "created_update_ids": [
+        "REQ-b4f626d02040",
+        "REQ-f5fe6c59a314",
+        "REQ-08c58be26cce"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-10T12:50:04.163707+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T124959Z-cd5dcd08",
+        "TEST-VO-20261010T125002Z-377fc45f",
+        "TEST-VO-20261010T125003Z-9ba6b404",
+        "TEST-VO-20261010T125003Z-593c2b25",
+        "TEST-VO-20261010T125004Z-76303687"
+      ],
+      "created_task_ids": [
+        "96TKrgOAdCR4BC2GhKFi",
+        "2p1QmoKYUYMr9twaJRnw",
+        "SSALMxlWfivXhHRwUWT6"
+      ],
+      "created_update_ids": [
+        "REQ-895b37ec44f6",
+        "REQ-15aaa1e2c9c8",
+        "REQ-d5093116d7f0"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      }
+    },
+    {
+      "observed_at_utc": "2026-10-10T12:50:11.914549+00:00",
+      "test": "live_function_call_probe",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b",
+      "function_calling_supported": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T12:50:25.492133+00:00",
+      "test": "local_agent_service_health",
+      "health": 200,
+      "llm_health": "ok",
+      "connected": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T12:56:16.431660+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T125610Z-b8b3f805",
+        "TEST-VO-20261010T125614Z-27523c28",
+        "TEST-VO-20261010T125615Z-56561139",
+        "TEST-VO-20261010T125615Z-fb17fe94",
+        "TEST-VO-20261010T125616Z-b32d1c89"
+      ],
+      "created_task_ids": [
+        "xS4juMccQdRrIjVFmz8V",
+        "vKkXKiT7oIba1jz6fmsi",
+        "wBCxLIPCd5LhV7a5khXR",
+        "C0V8LxHCPTQdLQzJoPe5"
+      ],
+      "created_update_ids": [
+        "REQ-fd0163059966",
+        "REQ-becc862033e0",
+        "REQ-b096dd23d830"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T12:56:22.458123+00:00",
+      "test": "live_function_call_probe",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b",
+      "function_calling_supported": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T12:56:29.632541+00:00",
+      "test": "local_agent_service_health",
+      "health": 200,
+      "llm_health": "ok",
+      "connected": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T13:07:38.525142+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T130733Z-ba4d6168",
+        "TEST-VO-20261010T130736Z-c85ee375",
+        "TEST-VO-20261010T130737Z-9074b02d",
+        "TEST-VO-20261010T130737Z-64ca3f59",
+        "TEST-VO-20261010T130738Z-80249927"
+      ],
+      "created_task_ids": [
+        "aOrJuQNorXXpbwUL1wXg",
+        "uLyeiIAoWBLbQ8X76wVC",
+        "roMrtvpE8UaDvSobfKbx",
+        "VLnLdS8pjD86jFOjub4z"
+      ],
+      "created_update_ids": [
+        "REQ-d726ed1d992d",
+        "REQ-3c905e0d1083",
+        "REQ-4f5cb763ba19"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "valid_external_result_status": 200,
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T13:16:00Z",
+      "test": "live_agent_chat_attempts",
+      "off_topic_chat": "completed_http_200",
+      "injection_data_product": "TEST-VO-20261010T130126Z-e01d2fec",
+      "injection_data_chat": "blocked_httpx_read_timeout_150s",
+      "websocket_event_chat": "blocked_handshake_timeout_after_service_stall",
+      "service_health_after_timeout": "unavailable",
+      "note": "No further mutation retries; product id recorded before create."
+    },
+    {
+      "observed_at_utc": "2026-10-10T13:18:00Z",
+      "test": "pytest_mock_suite",
+      "passed": 57,
+      "failed": 4,
+      "skipped_live": 5,
+      "failed_test_ids": [
+        "test_clarification_limit_stops_repeated_questions",
+        "test_solver_result_numbers_must_not_be_replaced_by_llm_numbers",
+        "test_llm_call_logs_role_model_tokens_and_latency",
+        "test_solver_state_and_error_events_are_defined"
+      ]
+    },
+    {
+      "observed_at_utc": "2026-10-10T13:20:00Z",
+      "test": "playwright_mock_suite",
+      "passed": 4,
+      "failed": 2,
+      "failed_test_ids": [
+        "canvas_fits_desktop_tablet_mobile_wrapper_overflow",
+        "chat_composer_and_event_log_panel_missing"
+      ],
+      "visual_baselines": [
+        "office-idle-mock-win32.png",
+        "office-reading-board-mock-win32.png",
+        "office-working-mock-win32.png",
+        "office-waiting-mock-win32.png",
+        "office-reporting-mock-win32.png"
+      ]
+    },
+    {
+      "observed_at_utc": "2026-10-10T13:22:00Z",
+      "test": "playwright_live_suite",
+      "passed": 1,
+      "failed": 1,
+      "passed_checks": [
+        "agent_health",
+        "llm_health",
+        "websocket_handshake"
+      ],
+      "failed_test_ids": [
+        "frontend_connected_status_and_chat_panel_missing"
+      ]
+    },
+    {
+      "observed_at_utc": "2026-10-10T13:23:00Z",
+      "test": "build_and_security_scan",
+      "frontend_build": "PASS",
+      "secret_value_occurrences_in_build_and_artifacts": 0,
+      "browser_auth_header_observed": false
+    },
+    {
+      "observed_at_utc": "2026-10-10T14:56:49.112878+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T145644Z-10f3d571",
+        "TEST-VO-20261010T145647Z-a3343538",
+        "TEST-VO-20261010T145648Z-d56e288d",
+        "TEST-VO-20261010T145648Z-33a0286d",
+        "TEST-VO-20261010T145648Z-a731f31a"
+      ],
+      "created_task_ids": [
+        "wuuys8KAVvAQPcrgfgeU",
+        "GBcHFqAuFEXOtyCKULF4",
+        "kZWoSwvrmWpOyb7I9d62",
+        "vFQHHBWemeosRjJbLH2Y"
+      ],
+      "created_update_ids": [
+        "REQ-78333c95faf6",
+        "REQ-9c92efb52e3a",
+        "REQ-0cd2800ff135"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "valid_external_result_status": 200,
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T14:56:57.547272+00:00",
+      "test": "live_function_call_probe",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b",
+      "function_calling_supported": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T14:57:16.438275+00:00",
+      "test": "local_agent_service_health",
+      "health": 200,
+      "llm_health": "ok",
+      "connected": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T14:59:55.546119+00:00",
+      "test": "live_agent_off_topic_and_data_injection",
+      "off_topic_status": 200,
+      "off_topic_next_action": "clarify",
+      "data_injection_status": 200,
+      "data_injection_intent": "inquiry",
+      "product_id": "TEST-VO-20261010T145832Z-a2d9fc25"
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:00:34.635534+00:00",
+      "test": "live_websocket_chat_events",
+      "session_id": "TEST-VO-WS-a0da9664c4",
+      "event_types": [
+        "agent_state",
+        "board_update",
+        "chat_message",
+        "agent_state"
+      ],
+      "has_solver_state": false,
+      "has_snapshot_after_reconnect": false
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:10:00Z",
+      "test": "fixes_applied_and_retested",
+      "mock_pytest": "61 passed, 5 live deselected",
+      "live_backend_and_router": "3 passed",
+      "live_agent_chat": "2 passed (off_topic+injection, websocket)",
+      "playwright_mock": "5 passed, 1 remaining (chat composer + event log absent)",
+      "fixed_findings": [
+        "F-01 solver number authority",
+        "F-02 blocking sync calls offloaded via asyncio.to_thread",
+        "F-04 clarification limit enforced",
+        "F-05 solver_state and error event emitters added",
+        "F-06 tablet/mobile wrapper overflow",
+        "F-08 LLM latency/token logging",
+        "F-09 lint ignorePatterns and duplicate timeout"
+      ],
+      "remaining_findings": [
+        "F-03 chat UI + connection status",
+        "F-07 event log + reconnect snapshot"
+      ]
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:40:04.471992+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T153959Z-3eb8a014",
+        "TEST-VO-20261010T154002Z-62df0437",
+        "TEST-VO-20261010T154003Z-b07e08a5",
+        "TEST-VO-20261010T154003Z-39d0825c",
+        "TEST-VO-20261010T154004Z-7325292d"
+      ],
+      "created_task_ids": [
+        "ZQfw6DS0YPcFWEl7F1vT",
+        "1j21hcQIYezVAMyTNSfQ",
+        "YiQl549YIWisNi8kvY7B",
+        "yYF5NV2DZRMqXYdO0sAa"
+      ],
+      "created_update_ids": [
+        "REQ-99c2375596bb",
+        "REQ-130c16446280",
+        "REQ-019c56146a42"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "valid_external_result_status": 200,
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:40:11.248396+00:00",
+      "test": "live_function_call_probe",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b",
+      "function_calling_supported": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:40:21.996293+00:00",
+      "test": "local_agent_service_health",
+      "health": 200,
+      "llm_health": "ok",
+      "connected": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:44:15.520105+00:00",
+      "test": "live_websocket_reconnect_snapshot",
+      "session_id": "TEST-VO-SNAPSHOT-4a268b224d",
+      "first_connection_snapshot": "session_snapshot",
+      "reconnect_snapshot": "session_snapshot"
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:51:39.578910+00:00",
+      "test": "live_websocket_chat_events",
+      "session_id": "TEST-VO-WS-02be29c4ff",
+      "event_types": [
+        "session_snapshot",
+        "agent_state",
+        "board_update",
+        "chat_message",
+        "agent_state"
+      ],
+      "has_solver_state": false,
+      "has_snapshot_on_connect": true,
+      "has_snapshot_after_reconnect": false
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:51:39.627640+00:00",
+      "test": "live_websocket_reconnect_snapshot",
+      "session_id": "TEST-VO-SNAPSHOT-b0aeb18d36",
+      "first_connection_snapshot": "session_snapshot",
+      "reconnect_snapshot": "session_snapshot"
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:51:45.465091+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T155140Z-25974d26",
+        "TEST-VO-20261010T155143Z-b678f0f3",
+        "TEST-VO-20261010T155144Z-f3512b27",
+        "TEST-VO-20261010T155144Z-ab1d1ada",
+        "TEST-VO-20261010T155145Z-70356a24"
+      ],
+      "created_task_ids": [
+        "WDz02ZkbjB532X1Iahcz",
+        "7rBenZpr7dgwmkRjwPTp",
+        "T7lx7gNMnafkCw1owdXu",
+        "9PAbVf3FpIppWZYd1XwI"
+      ],
+      "created_update_ids": [
+        "REQ-36b780394cc7",
+        "REQ-7e4bce769182",
+        "REQ-43d12515d2f0"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "valid_external_result_status": 200,
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:51:54.469044+00:00",
+      "test": "live_function_call_probe",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b",
+      "function_calling_supported": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T15:51:57.652757+00:00",
+      "test": "local_agent_service_health",
+      "health": 200,
+      "llm_health": "ok",
+      "connected": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:15:00Z",
+      "test": "local_live_mode_ui",
+      "mock_live_switch": "PASS",
+      "local_ws_url_path": "/ws/{session_id}",
+      "chat_panel": "visible",
+      "event_log": "visible",
+      "cors": "localhost_vite_allowed"
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:16:00Z",
+      "test": "live_agent_chat_retry",
+      "first_off_topic_http_status": 500,
+      "injection_chat_status": "not_retried",
+      "note": "Latest 7-test live pytest run: 6 passed, 1 failed due HTTP 500 on agent chat after intermittent 9Router provider 429/503. Earlier off-topic/data-injection chats returned 200."
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:17:00Z",
+      "test": "latest_retest_totals",
+      "mock_pytest": "61 passed, 7 live deselected",
+      "playwright_mock": "6 passed",
+      "playwright_live": "2 passed",
+      "build": "PASS",
+      "secret_scan_build_artifacts": 0
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:00:32.017760+00:00",
+      "test": "live_websocket_chat_events",
+      "session_id": "TEST-VO-WS-2c50181f94",
+      "event_types": [
+        "session_snapshot",
+        "agent_state",
+        "board_update",
+        "chat_message",
+        "agent_state"
+      ],
+      "has_solver_state": false,
+      "has_snapshot_on_connect": true,
+      "has_snapshot_after_reconnect": false
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:00:32.058717+00:00",
+      "test": "live_websocket_reconnect_snapshot",
+      "session_id": "TEST-VO-SNAPSHOT-b5839fa893",
+      "first_connection_snapshot": "session_snapshot",
+      "reconnect_snapshot": "session_snapshot"
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:00:37.458099+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T160032Z-307fdee3",
+        "TEST-VO-20261010T160035Z-8e340956",
+        "TEST-VO-20261010T160036Z-e005310b",
+        "TEST-VO-20261010T160036Z-e4a2ec14",
+        "TEST-VO-20261010T160037Z-63addad8"
+      ],
+      "created_task_ids": [
+        "m1WpVptThITwXucqvpNJ",
+        "dvJ9hRywVMefZtAFlUC5",
+        "sYAzlFNgy1JXGSdjKSUz",
+        "XY1Ua2MPBOyeJzFRKeNQ"
+      ],
+      "created_update_ids": [
+        "REQ-9adc6e63ca5e",
+        "REQ-558be46ef875",
+        "REQ-bebab19b56c3"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "valid_external_result_status": 200,
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:00:43.784412+00:00",
+      "test": "live_function_call_probe",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b",
+      "function_calling_supported": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:00:47.392015+00:00",
+      "test": "local_agent_service_health",
+      "health": 200,
+      "llm_health": "ok",
+      "connected": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:18:21.651543+00:00",
+      "test": "live_websocket_chat_events",
+      "session_id": "TEST-VO-WS-2b088cfc1d",
+      "event_types": [
+        "session_snapshot",
+        "agent_state",
+        "board_update",
+        "chat_message",
+        "agent_state"
+      ],
+      "has_solver_state": false,
+      "has_snapshot_on_connect": true,
+      "has_snapshot_after_reconnect": false
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:18:21.686813+00:00",
+      "test": "live_websocket_reconnect_snapshot",
+      "session_id": "TEST-VO-SNAPSHOT-b06ab6e1ad",
+      "first_connection_snapshot": "session_snapshot",
+      "reconnect_snapshot": "session_snapshot"
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:18:27.844434+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T161822Z-1169e6de",
+        "TEST-VO-20261010T161825Z-da8f3437",
+        "TEST-VO-20261010T161826Z-655553e6",
+        "TEST-VO-20261010T161827Z-2d1f2f89",
+        "TEST-VO-20261010T161827Z-f66c2b27"
+      ],
+      "created_task_ids": [
+        "s8trQaA6jrPWgVlmNDjj",
+        "hxM9vzxvsES79ZkOrnaS",
+        "gkHyJimDmJvnAXVWtRFN",
+        "RZ2kqRn2w4oL3w3815cr"
+      ],
+      "created_update_ids": [
+        "REQ-6c0445d1401c",
+        "REQ-693c9a18556a",
+        "REQ-65cec9b99d22"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "valid_external_result_status": 200,
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:18:34.958509+00:00",
+      "test": "live_function_call_probe",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b",
+      "function_calling_supported": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:18:38.132409+00:00",
+      "test": "local_agent_service_health",
+      "health": 200,
+      "llm_health": "ok",
+      "connected": true
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:23:15.183155+00:00",
+      "test": "live_agent_off_topic_and_data_injection",
+      "off_topic_status": 200,
+      "off_topic_next_action": "clarify",
+      "data_injection_status": 200,
+      "data_injection_intent": "inquiry",
+      "product_id": "TEST-VO-20261010T162209Z-9aa30b22"
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:23:45.080507+00:00",
+      "test": "live_websocket_chat_events",
+      "session_id": "TEST-VO-WS-df82f8bb10",
+      "event_types": [
+        "session_snapshot",
+        "agent_state",
+        "board_update",
+        "chat_message",
+        "agent_state"
+      ],
+      "has_solver_state": false,
+      "has_snapshot_on_connect": true,
+      "has_snapshot_after_reconnect": false
+    },
+    {
+      "observed_at_utc": "2026-10-10T16:23:45.102591+00:00",
+      "test": "live_websocket_reconnect_snapshot",
+      "session_id": "TEST-VO-SNAPSHOT-fbfb8f1607",
+      "first_connection_snapshot": "session_snapshot",
+      "reconnect_snapshot": "session_snapshot"
+    },
+    {
+      "observed_at_utc": "2026-10-10T18:40:21.496181+00:00",
+      "test": "live_backend_contract",
+      "sequence": {
+        "input_then_calculate": {
+          "input_status": 200,
+          "calculate_status": 200
+        },
+        "calculate_then_input": {
+          "calculate_status": 200,
+          "input_status": 409
+        },
+        "valid_order_observed": "GET calculation-input then POST calculate then POST result"
+      },
+      "duplicate_request_id": {
+        "first_status": 201,
+        "second_status": 409,
+        "same_update_id": false
+      },
+      "created_product_ids": [
+        "TEST-VO-20261010T184016Z-8f65cfb4",
+        "TEST-VO-20261010T184019Z-1610e0a6",
+        "TEST-VO-20261010T184020Z-826689d2",
+        "TEST-VO-20261010T184021Z-0f22d1a9",
+        "TEST-VO-20261010T184021Z-4a905637"
+      ],
+      "created_task_ids": [
+        "S3W9vagH9S1aBWlppxwp",
+        "drs8P0vPPGX3ZA5jtyS1",
+        "qZun4mcmJX5JTpz4kFX5",
+        "rjnkZvYzHAAe2jzov54Q"
+      ],
+      "created_update_ids": [
+        "REQ-c279710a52e2",
+        "REQ-ffdeeae562f6",
+        "REQ-056266bc4d4f"
+      ],
+      "stale_revision_statuses": {
+        "proposal": 409,
+        "result": 409
+      },
+      "extra_field_statuses": {
+        "product": 422,
+        "task_patch": 422,
+        "result": 422
+      },
+      "valid_external_result_status": 200,
+      "concurrent_same_revision_patch_statuses": [
+        200,
+        409
+      ],
+      "concurrent_revision_after": 2
+    },
+    {
+      "observed_at_utc": "2026-10-10T18:40:23.773794+00:00",
+      "test": "live_websocket_reconnect_snapshot",
+      "session_id": "TEST-VO-SNAPSHOT-0df469eb74",
+      "first_connection_snapshot": "session_snapshot",
+      "reconnect_snapshot": "session_snapshot"
+    }
+  ]
+}
