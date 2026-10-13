@@ -2,6 +2,7 @@ import asyncio
 import datetime
 import json
 import logging
+import re
 import uuid
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field
@@ -28,6 +29,16 @@ SAFE_FALLBACK_MESSAGE = (
     "Maaf, terjadi kendala saat memproses permintaan secara terstruktur. "
     "Bisa tolong ulangi atau jelaskan kembali data stok yang ingin diperiksa?"
 )
+
+
+def _safe_error_detail(exc: Exception, limit: int = 240) -> str:
+    """Return bounded diagnostics without exposing API credentials."""
+    detail = str(exc).replace("\r", " ").replace("\n", " ").strip()
+    detail = re.sub(r"(?i)(bearer\s+|api[_-]?key\s*[=:]\s*)\S+", r"\1[redacted]", detail)
+    detail = re.sub(r"(?i)sk-[A-Za-z0-9_-]+", "[redacted]", detail)
+    if len(detail) > limit:
+        return f"{detail[:limit - 3]}..."
+    return detail or "Tidak ada detail dari provider."
 
 
 def detect_state_conflicts(
@@ -142,21 +153,13 @@ Keluaran non-tool WAJIB berupa JSON valid dengan format:
             "clarification_turns": session.clarification_turns,
         })
 
-        # Stop asking once clarification limit is reached; summarize what we have instead.
-        if session.clarification_turns >= self.max_clarification_turns:
-            summary = self._clarification_summary(session)
-            session.add_message("assistant", summary)
-            await event_manager.emit_chat_message(session_id, "assistant", summary)
-            await event_manager.emit_agent_state("done", session_id)
-            return AgentResponse(
-                intent="summarize",
-                extracted={},
-                conflicts=[],
-                next_action="answer",
-                message_to_user=summary,
-            )
-
         system_prompt = self._build_system_prompt(session)
+        if session.clarification_turns >= self.max_clarification_turns:
+            system_prompt += (
+                "\n\nBatas klarifikasi tercapai, tetapi sesi tetap aktif. "
+                "Jangan mengulang pertanyaan yang sama. Ringkas data yang sudah ada "
+                "dan minta hanya satu tindakan atau informasi paling penting berikutnya."
+            )
         conversation: List[Dict[str, Any]] = [
             {"role": "system", "content": system_prompt}
         ]
@@ -172,8 +175,19 @@ Keluaran non-tool WAJIB berupa JSON valid dengan format:
             try:
                 res = await asyncio.to_thread(chat, "ie_agent", conversation, TOOL_DEFINITIONS)
             except Exception as exc:
-                logger.error("LLM call failed session=%s error_type=%s", session_id, type(exc).__name__)
-                await event_manager.emit_error(session_id, "Agent sedang sibuk. Silakan coba lagi.")
+                error_type = type(exc).__name__
+                error_detail = _safe_error_detail(exc)
+                logger.error(
+                    "LLM call failed session=%s error_type=%s detail=%s",
+                    session_id,
+                    error_type,
+                    error_detail,
+                )
+                await event_manager.emit_error(
+                    session_id,
+                    f"Agent gagal menghubungi layanan AI ({error_type}): {error_detail}",
+                    {"error_type": error_type, "detail": error_detail},
+                )
                 final_response_obj = AgentResponse(
                     intent="clarify",
                     extracted={},
@@ -268,8 +282,19 @@ Keluaran non-tool WAJIB berupa JSON valid dengan format:
                     retry_text = retry_res.get("content", "")
                     parsed = self._parse_structured_output(retry_text)
                 except Exception as exc:
-                    logger.error("LLM format retry failed session=%s error_type=%s", session_id, type(exc).__name__)
-                    await event_manager.emit_error(session_id, "Agent sedang sibuk. Silakan coba lagi.")
+                    error_type = type(exc).__name__
+                    error_detail = _safe_error_detail(exc)
+                    logger.error(
+                        "LLM format retry failed session=%s error_type=%s detail=%s",
+                        session_id,
+                        error_type,
+                        error_detail,
+                    )
+                    await event_manager.emit_error(
+                        session_id,
+                        f"Agent gagal memformat jawaban dari layanan AI ({error_type}): {error_detail}",
+                        {"error_type": error_type, "detail": error_detail},
+                    )
                     parsed = None
 
             if not parsed:
@@ -311,7 +336,10 @@ Keluaran non-tool WAJIB berupa JSON valid dengan format:
 
         # If next action is clarify, increment clarification counter
         if final_response_obj.next_action == "clarify":
-            session.clarification_turns += 1
+            session.clarification_turns = min(
+                session.clarification_turns + 1,
+                self.max_clarification_turns,
+            )
 
         session.add_message("assistant", final_response_obj.message_to_user)
         await event_manager.emit_chat_message(session_id, "assistant", final_response_obj.message_to_user)

@@ -47,8 +47,10 @@ export const LivePanel: React.FC = () => {
 
   const [draft, setDraft] = useState('');
   const [busy, setBusy] = useState(false);
+  const [pendingChats, setPendingChats] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const actionLock = useRef(false);
+  const chatQueue = useRef(Promise.resolve());
 
   const runOnce = async (action: () => Promise<void>) => {
     if (actionLock.current) return;
@@ -67,23 +69,33 @@ export const LivePanel: React.FC = () => {
 
   const send = () => {
     const text = draft.trim();
-    if (!text || actionLock.current) return;
+    if (!text) return;
     setDraft('');
-    void runOnce(async () => {
-      useLiveStore.getState().pushMessage({ id: `${Date.now()}-u`, role: 'user', content: text });
-      const response = await postChat(sessionId, text) as { message_to_user?: string };
-      if (response.message_to_user) {
-        const current = useLiveStore.getState().messages;
-        if (current.at(-1)?.content !== response.message_to_user) {
-          useLiveStore.getState().pushMessage({
-            id: `${Date.now()}-a-http`,
-            role: 'assistant',
-            content: response.message_to_user,
-          });
+    useLiveStore.getState().pushMessage({ id: `${Date.now()}-u`, role: 'user', content: text });
+    setPendingChats((count) => count + 1);
+    setError(null);
+
+    chatQueue.current = chatQueue.current
+      .then(async () => {
+        const response = await postChat(sessionId, text) as { message_to_user?: string };
+        if (response.message_to_user) {
+          const current = useLiveStore.getState().messages;
+          if (current.at(-1)?.content !== response.message_to_user) {
+            useLiveStore.getState().pushMessage({
+              id: `${Date.now()}-a-http`,
+              role: 'assistant',
+              content: response.message_to_user,
+            });
+          }
+          useOfficeStore.getState().setChatMessage(response.message_to_user);
         }
-        useOfficeStore.getState().setChatMessage(response.message_to_user);
-      }
-    });
+      })
+      .catch((e) => {
+        setError((e as Error).message);
+      })
+      .finally(() => {
+        setPendingChats((count) => Math.max(0, count - 1));
+      });
   };
 
   const confirm = (updateId: string) => {
@@ -160,7 +172,6 @@ export const LivePanel: React.FC = () => {
           value={draft}
           onChange={(e) => setDraft(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && send()}
-          disabled={busy}
           placeholder="Tulis pesan untuk IE Agent..."
           style={{
             flex: 1,
@@ -173,8 +184,8 @@ export const LivePanel: React.FC = () => {
             outline: 'none',
           }}
         />
-        <button onClick={send} disabled={busy} style={btnStyle}>
-          {busy ? '...' : 'Kirim'}
+        <button onClick={send} disabled={!draft.trim()} style={btnStyle}>
+          {pendingChats > 0 ? `Kirim (${pendingChats})` : 'Kirim'}
         </button>
       </div>
 
@@ -246,6 +257,9 @@ export const LivePanel: React.FC = () => {
           {events.map((e) => (
             <div key={e.id} style={{ fontFamily: 'monospace' }}>
               {new Date(e.at).toLocaleTimeString()} · {e.type}
+              {e.type === 'error' && typeof e.payload === 'object' && e.payload !== null && 'message' in e.payload
+                ? ` · ${String(e.payload.message)}`
+                : ''}
             </div>
           ))}
         </div>

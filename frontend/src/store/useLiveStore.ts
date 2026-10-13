@@ -49,7 +49,14 @@ export const useLiveStore = create<LiveStore>((set) => ({
   setConnected: (connected) => set({ connected }),
 
   pushMessage: (message) =>
-    set((s) => ({ messages: [...s.messages, message] })),
+    set((s) => {
+      const duplicate = s.messages.some(
+        (existing) =>
+          existing.role === message.role &&
+          existing.content === message.content
+      );
+      return duplicate ? s : { messages: [...s.messages, message] };
+    }),
 
   pushProposal: (proposal) =>
     set((s) => ({

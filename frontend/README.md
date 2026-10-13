@@ -2,13 +2,13 @@
 
 ## Run with the local agent-service
 
-1. From the repository root, start the IE agent API (it calls the deployed stock backend and OpenRouter directly):
+1. From the repository root, start the IE agent API (it calls the deployed stock backend and the configured 9Router/OpenRouter endpoint):
 
    ```powershell
-   python -m uvicorn app.main:app --app-dir agent-service --host 127.0.0.1 --port 8000
+   .\.venv\Scripts\python.exe -m uvicorn app.main:app --app-dir agent-service --host 127.0.0.1 --port 8000
    ```
 
-   Confirm `http://127.0.0.1:8000/health` returns `{"status":"ok"}`. Put `DEV_TOKEN` and `OPENROUTER_API_KEY` in the repository-root `.env`; keep both server-side.
+   Confirm `http://127.0.0.1:8000/health` returns `{"status":"ok"}`. Put `DEV_TOKEN`, `OPENROUTER_BASE_URL`, and `OPENROUTER_API_KEY` in the repository-root `.env`; keep all credentials server-side.
 
 2. In another terminal, from `frontend/`:
 
@@ -21,6 +21,10 @@
    `.env.local` defaults to `VITE_AGENT_URL=http://127.0.0.1:8000`. Restart Vite after changing it. Vite exposes only the agent-service URL; backend and OpenRouter credentials are never put in frontend variables.
 
 3. Switch the header control from **MOCK** to **LIVE**. Mock mode retains local presets. Live mode replaces those controls with chat, event history, connection status, and approval cards.
+
+Live chat keeps one browser `session_id` in `localStorage`. Multiple messages can be submitted
+without locking the composer; requests are queued in order so the agent's session memory stays
+consistent. The clarification limit is a soft limit: reaching it does not terminate the session.
 
 The agent-service is local in this stage. For a future deployment, set `VITE_AGENT_URL` to the deployed agent-service URL and update its CORS allowlist for the frontend origin.
 

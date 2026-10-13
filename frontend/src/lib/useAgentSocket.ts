@@ -146,7 +146,13 @@ export function useAgentSocket(enabled: boolean, sessionId: string): void {
               }
               break;
             case 'error':
-              // surfaced via event log; no scene mutation
+              if (msg.message) {
+                live.pushMessage({
+                  id: `${Date.now()}-${Math.random()}`,
+                  role: 'assistant',
+                  content: `Error: ${msg.message}`,
+                });
+              }
               break;
           }
         } catch {

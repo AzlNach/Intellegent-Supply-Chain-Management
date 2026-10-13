@@ -11,7 +11,7 @@ from app.backend_client import BackendAPIError, BackendClient
 from app.events import ConnectionManager
 from app.ie_agent import AgentResponse, IEAgent, SAFE_FALLBACK_MESSAGE, detect_state_conflicts
 from app.main import app
-from app.memory import SessionState
+from app.memory import SessionState, session_memory
 from app.solver import compute
 from app.solver.errors import RevisionConflictError, SolverValidationError
 from app.solver.runner import run_solver
@@ -195,7 +195,7 @@ def test_stock_conflict_detection_and_staleness_are_deterministic():
 
 
 @pytest.mark.mock
-def test_clarification_limit_stops_repeated_questions():
+def test_clarification_limit_keeps_session_active_without_counter_growth():
     clarification = {"intent": "clarify", "extracted": {}, "conflicts": [], "next_action": "clarify",
                     "message_to_user": "Produk yang mana?"}
     with patch("app.ie_agent.chat", return_value={"content": json.dumps(clarification), "tool_calls": None}) as llm:
@@ -203,8 +203,10 @@ def test_clarification_limit_stops_repeated_questions():
         asyncio.run(agent.run("TEST-VO-MOCK-LIMIT", "Hitung kebutuhan"))
         asyncio.run(agent.run("TEST-VO-MOCK-LIMIT", "Masih belum jelas"))
         final = asyncio.run(agent.run("TEST-VO-MOCK-LIMIT", "Tetap tidak ada nama"))
-    assert final.next_action != "clarify", "agent kept asking after configured clarification limit"
-    assert llm.call_count <= 2, "agent kept calling LLM after clarification limit"
+    session = session_memory.get_or_create("TEST-VO-MOCK-LIMIT")
+    assert final.message_to_user == "Produk yang mana?"
+    assert session.clarification_turns == 2
+    assert llm.call_count == 3, "session should remain active after clarification limit"
 
 
 @pytest.mark.mock

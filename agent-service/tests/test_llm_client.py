@@ -58,8 +58,19 @@ def test_chat_success(mock_openai):
 
 
 def test_client_defaults_to_direct_openrouter_and_reads_key_from_environment(mock_openai, monkeypatch):
+    import app.llm_client as llm_module
+
     monkeypatch.setenv("OPENROUTER_API_KEY", "test-key-never-log")
     monkeypatch.delenv("OPENROUTER_BASE_URL", raising=False)
+    monkeypatch.setattr(
+        llm_module,
+        "_load_env_var",
+        lambda key, default="": (
+            "test-key-never-log"
+            if key == "OPENROUTER_API_KEY"
+            else default
+        ),
+    )
     client = LLMClient(check_tools_on_startup=False)
     assert client.base_url == DEFAULT_BASE_URL == "https://openrouter.ai/api/v1"
     assert client.api_key == "test-key-never-log"
